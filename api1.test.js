@@ -15,4 +15,11 @@ describe('Tests for checking the logging of data received from HTTP Get request'
     };
     accessHTTPAsync('http://httpstat.us/404', callback);
   });
+  test('Verify data returned for HTTP request end', (done) => {
+    const callback = (error, data) => {
+      expect(data).toMatch('END');
+      done();
+    };
+    accessHTTPAsync('https://5gj1qvkc5h.execute-api.us-east-1.amazonaws.com/dev/allBooks', callback);
+  });
 });
