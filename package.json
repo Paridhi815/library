@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "hapi": "^16.6.2",
+    "hapi-gateway": "^0.6.0",
     "inert": "^4.2.1"
   }
 }
